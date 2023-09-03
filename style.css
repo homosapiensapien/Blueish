@@ -433,31 +433,37 @@ nav ul li {
   transform-origin: bottom right;
   background-size: 90%;
   color: var(--color-primary-alt);
-  font-size: 0.9rem;
 }
 
 .profile {
-  width: 95vw;
+  width: 150vw;
   max-width: 80ch;
   margin: 1rem auto 10vh;
   z-index: 1;
+  border: 2px solid black;
 }
 .profile h4 {
   margin: 0;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   text-align: center;
-  padding-top: 1em;
+  font-size: 1.25em;
 }
 .profile .container {
   display: grid;
   justify-items: center;
-  grid-gap: 1rem;
   background-color: var(--color-grey);
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.profile .container span {
+  font-size: 1em;
 }
 .profile .container > a {
   min-height: 2em;
-  border: 2px solid currentColor;
-  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  color: black;
+  border-radius: var(--border-radius);
+  transition: 0.3s;
 }
 
 .profile ul {
@@ -465,7 +471,7 @@ nav ul li {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  padding: 2em;
+  padding: 1.5em;
   list-style: none;
 }
 .profile ul li {
