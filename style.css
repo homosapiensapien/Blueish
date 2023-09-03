@@ -446,7 +446,7 @@ nav ul li {
   margin: 0;
   color: var(--color-primary);
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 .profile .container {
   display: grid;
@@ -456,7 +456,12 @@ nav ul li {
   padding-top: 1em;
 }
 .profile .container span {
-  font-size: 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.profile .container li span > a {
+  color: var(--color-anchor) !important;
+  font-weight: 500;
 }
 .profile .container > a {
   min-height: 2em;
