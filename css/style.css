@@ -458,7 +458,7 @@ nav ul li {
   border-radius: var(--border-radius);
   background-color: var(--color-grey);
   border: 2px solid var(--color-secondary);
-  padding: 1em;
+  padding: 0.75em;
 }
 .profile .container > a {
   min-height: 2em;
