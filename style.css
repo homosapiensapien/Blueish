@@ -12,10 +12,10 @@
   --color-anchor: #0065fc;
   --font-family: "Inter", sans-serif;
   --font-weight-strong: bold;
-  --font-size-h1: 5rem;
+  --font-size-h1: 6rem;
   --font-size-h2: 1.5rem;
-  --font-size-h3: 1.35rem;
-  --font-size-h4: 1.25rem;
+  --font-size-h3: 1.25rem;
+  --font-size-h4: 1.20rem;
   --font-size-text: 1.15rem;
   --border-radius: 3px;
 }
@@ -50,7 +50,7 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
-  line-height: 1.5;
+  line-height: 1.6;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
 }
@@ -89,7 +89,7 @@ h4 {
 
 h1 {
   font-size: var(--font-size-h1);
-  font-size: clamp(2rem, 7vw, var(--font-size-h1));
+  font-size: clamp(4rem, 8.5vw, var(--font-size-h1));
   font-weight: bold;
   line-height: 1.5;
 }
@@ -249,9 +249,13 @@ header h1 {
   place-content: center;
 }
 header h2 {
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-h3);
+  color: var(--color-text);
 }
-
+header p {
+  color: var(--color-text);
+  margin-bottom: 2.5em;
+}
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -444,7 +448,7 @@ nav ul li {
 }
 .profile h4 {
   margin: 0;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   text-align: center;
 }
 .profile .container {
@@ -458,8 +462,11 @@ nav ul li {
 }
 .profile .container > a {
   min-height: 2em;
-  border: 2px solid currentColor;
-  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-text);
+}
+.profile  .container ul li span > a {
+  color: var(--color-anchor)
 }
 .profile ul {
   display: -webkit-box;
@@ -491,9 +498,7 @@ nav ul li {
           flex-grow: 1;
   word-break: break-word;
 }
-.profile ul li span:nth-child(2) a {
-  color: inherit;
-}
+
 @media (min-width: 180ch) {
   .profile {
     position: fixed;
