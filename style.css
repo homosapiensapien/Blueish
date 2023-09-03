@@ -9,7 +9,7 @@
   --color-grey: rgb(231, 231, 231);
   --color-text: black;
   --color-light: #fff;
-  --color-anchor: #237bff;
+  --color-anchor: #0065fc;
   --font-family: "Inter", sans-serif;
   --font-weight-strong: bold;
   --font-size-h1: 5rem;
@@ -586,11 +586,15 @@ nav ul li {
 .profile .container > a {
   padding: 0.75em 2em 0.75em 2em;
 }
-[class^=link]:hover, [class^=link]:focus,
-.profile .container > a:hover,
-.profile .container > a:focus {
+[class^=link]:hover,
+.profile .container > a:hover {
   text-decoration: none;
   background-color: var(--color-secondary-alt);
+}
+[class^=link]:active,
+.profile .container > a:active {
+  text-decoration: none;
+  background-color: var(--color-secondary);
 }
 
 .link-allstyles {
