@@ -436,50 +436,47 @@ nav ul li {
 }
 
 .profile {
-  width: 150vw;
+  width: 95vw;
   max-width: 80ch;
   margin: 1rem auto 10vh;
+  padding: 1.25rem;
   z-index: 1;
-  border: 2px solid black;
 }
 .profile h4 {
   margin: 0;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-align: center;
-  font-size: 1.15em;
 }
 .profile .container {
   display: grid;
   justify-items: center;
+  grid-gap: 1rem;
+  border-radius: var(--border-radius);
   background-color: var(--color-grey);
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
-.profile .container span {
-  font-size: 0.9em;
-  font-weight: 500;
-}
-.profile .container li span > a {
-  color: var(--color-anchor) !important;
-  font-weight: 500;
+  border: 2px solid var(--color-secondary);
+  padding: 1em;
 }
 .profile .container > a {
   min-height: 2em;
-  border: 2px solid var(--color-secondary);
-  color: black;
-  border-radius: var(--border-radius);
-  transition: 0.3s;
+  border: 2px solid currentColor;
+  color: var(--color-secondary);
 }
-
 .profile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
-  padding: 1.5em;
+  padding: 0;
   list-style: none;
 }
 .profile ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0.45em;
 }
@@ -489,7 +486,9 @@ nav ul li {
   font-weight: var(--font-weight-strong);
 }
 .profile ul li span:nth-child(2) {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   word-break: break-word;
 }
 .profile ul li span:nth-child(2) a {
@@ -503,19 +502,22 @@ nav ul li {
     max-width: 30ch;
     margin-bottom: 0;
     border-radius: var(--border-radius);
-    background-color: var(--color-light);
   }
   .profile ul {
-    justify-content: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
   }
   .profile ul li {
     padding: 0;
+    font-size: 1em;
   }
   .profile ul li span:nth-child(1) {
     width: 8ch;
     margin-right: 0;
   }
 }
+
 
 .page-footer {
   position: relative;
