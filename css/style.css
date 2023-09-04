@@ -615,11 +615,7 @@ nav ul li {
 .link-allstyles {
   font-size: var(--font-size-h4);
 }
-@media (max-width: 400px) {
-  .link-allstyles {
-    margin-left: 6rem;
-  }
-}
+
 
 .link-github svg {
   width: 1em;
